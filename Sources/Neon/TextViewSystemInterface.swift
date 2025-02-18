@@ -17,7 +17,7 @@ import Rearrange
 /// > Note: Consider checking out ``LayoutManagerSystemInterface``, ``TextLayoutManagerSystemInterface``, or ``TextStorageSystemInterface``. These is recommended if you know what behavior you'd like. Alternatively, you can always create your own ``TextSystemInterface`` for complete control.
 @MainActor
 public struct TextViewSystemInterface {
-	public let textView: TextView
+	public weak var textView: TextView!
 	public let attributeProvider: TokenAttributeProvider
 	private let placeholderStorage = NSTextStorage()
 

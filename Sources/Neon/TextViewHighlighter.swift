@@ -59,7 +59,7 @@ public final class TextViewHighlighter {
 		}
 	}
 
-	public let textView: TextView
+	public weak var textView: TextView!
 
 	private let configuration: Configuration
 	private let styler: Styler
